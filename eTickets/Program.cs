@@ -1,5 +1,7 @@
 var builder = WebApplication.CreateBuilder(args);
+//DbContext config
 
+services.AddDbContext<AppDbContext>();
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
